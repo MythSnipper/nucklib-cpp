@@ -84,8 +84,19 @@ namespace nuck{
             return pow(num * num, power/2);
         }
     }
-
-
+    
+    uint32_t xorshift32(uint32_t num){
+        num ^= num << 13;
+        num ^= num >> 17;
+        num ^= num << 5;
+        return num;
+    }
+    uint64_t xorshift64(uint64_t num){
+        num ^= num << 13;
+        num ^= num >> 7;
+        num ^= num << 17;
+        return num;
+    }
 
 
 

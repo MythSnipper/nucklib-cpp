@@ -13,7 +13,8 @@ namespace nuck{
     uint64_t gcd(int64_t num1, int64_t num2);
     uint64_t lcm(int64_t num1, int64_t num2);
     double pow(int64_t num, int64_t power);
-
+    uint32_t xorshift32(uint32_t num);
+    uint64_t xorshift64(uint64_t num);
 
 
 

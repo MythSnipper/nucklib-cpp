@@ -47,6 +47,7 @@ int main(){
         uint64_t result = nuck::lcm(6, i);
         printf("x1: %d x2: %d f(x1, x2): %lld\n", 6, i, result);
     }
+    /*
     printf("Exponent: \n");
     for(int i=-2;i<=4;i++){
         for(int j=0;j<5;j++){
@@ -56,8 +57,13 @@ int main(){
     }
     uint64_t result = nuck::pow(5, 11);
     printf("x1: %d x2: %d f(x1, x2): %lld\n", 5, 11, result);
+    */
 
-
+    uint64_t num = time(NULL);
+    for(int i=0;i<30;i++){
+        num = nuck::xorshift64(num);
+        printf("%llu\n", num);
+    }
 
 
 }
